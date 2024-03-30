@@ -1,0 +1,20 @@
+﻿@model FoodTrucksViewModel
+
+@if (Model.FoodTrucks != null && Model.FoodTrucks.Any())
+{
+    <h2>Food Trucks Near this Location based on Preferred Food:</h2>
+    <ul>
+        @foreach (var truck in Model.FoodTrucks)
+        {
+            <li>
+                <h3>@truck.Applicant</h3>
+                <p>Address: @truck.Address</p>
+                <p>Food Items: @truck.FoodItems</p>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No food trucks found.</p>
+}
