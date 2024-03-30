@@ -2,7 +2,7 @@
 
 @if (Model.FoodTrucks != null && Model.FoodTrucks.Any())
 {
-    <h2>Food Trucks Near this Location based on Preferred Food:</h2>
+    <h2>Food Trucks Near this Location based on Preferred Food "@Model.PreferredFood" </h2>
     <ul>
         @foreach (var truck in Model.FoodTrucks)
         {

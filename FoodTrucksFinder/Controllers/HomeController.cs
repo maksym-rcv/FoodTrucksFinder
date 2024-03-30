@@ -36,7 +36,7 @@ namespace FoodTrucksFinder.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"An error occurred while processing your request. {ex.Message}");
+                return StatusCode(500, ex.Message /*$"An error occurred while processing your request. {ex.Message}"*/);
             }
         }
 

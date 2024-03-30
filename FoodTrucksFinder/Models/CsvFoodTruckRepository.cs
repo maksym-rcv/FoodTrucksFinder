@@ -19,6 +19,11 @@ namespace FoodTrucksFinder.Models
         {
             get
             {
+                if (!File.Exists(_csvFilePath))
+                {
+                    throw new FileNotFoundException($"CSV file '{_csvFilePath}' was not found.");
+                }
+
                 return LoadFoodTrucksFromCsv().AsQueryable();
             }
         }

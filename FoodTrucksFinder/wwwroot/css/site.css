@@ -21,7 +21,7 @@ body {
 /* Style the form container */
 .form-container {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 5px;
@@ -55,7 +55,11 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-    /* Style form submit button on hover */
-    button[type="submit"]:hover {
-        background-color: #0056b3;
-    }
+/* Style form submit button on hover */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#searchResults{
+    margin-bottom: 70px;
+}

@@ -42,8 +42,8 @@
             success: function (response) {
                 $('#searchResults').html(response);
             },
-            error: function () {
-                $('#searchResults').html('<p>An error occurred while processing your request.</p>');
+            error: function (request, status, error) {
+                $('#searchResults').html('<p>Error: ' + request.responseText + '</p>');
             }
         });
     });
